@@ -14,7 +14,7 @@ public class PlayerInteraction : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject == interactable.gameObject)
+        if (interactable != null && other.gameObject == interactable.gameObject)
         {
             interactable = null;
         }
